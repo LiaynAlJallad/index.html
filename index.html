@@ -1,0 +1,356 @@
+<html> 
+<html lang = "en"> 
+<meta charset="UTF-8"
+<head> 
+    <title>Portfolio </title>
+</head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- <link rel="stylesheet" href="index.css"> -->
+
+
+<body>
+    
+    <!-- <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p>This is a another paragraph.</p> -->
+
+
+
+
+
+<!--making links in the website -->
+<div class = "topNavigation"> 
+    <a class = "active" href="#home"><b>Home</b></a>
+    <!-- <a href ="#news">News</a> -->
+    <a href = "#contact">Contact</a>
+    <a href = "#about">About</a>
+    <a href = "#info">My Info</a>
+
+</div>      
+
+
+
+  
+
+<!--putting a text on top of an image-->
+<div Class="hero-image ">
+    <div Class=" hero-text">
+        <h1  style = "font-size: 50 px">I am Liyan</h1>
+        <p> I am a Student at Western </p>
+        liyanfadijallad@gmai.com
+        <br><br>
+        <!-- <button id="about">Hello</button> -->
+    </div>
+</div>
+
+
+
+<div class="about-section">
+    <h1 id ="about">About Me</h1>
+    <p>I am in my second year of Engineering at Wetsern University</p>
+  </div>
+
+
+<p></p>
+<h2 id="info" style="text-align:center"><br>My Info</h2>
+<p>
+<!-- <h3>Experience</h3> -->
+</p>
+<div class="row">
+  <div class="column">
+    <div class="photo">
+      <img src="coding1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>My Degree</h2>
+        <p class="title">Software Engineering</p>
+        <p>I am working on my bachelors degree in software engineering.</p>
+        <p><button class="button"> Contact </button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="photo">
+      <img src="photo.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>My Job</h2>
+        <p class="title">Social Media Assisstant</p>
+        <p>I run the social media platforms for the departement of languages and cultures at Western University.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+
+
+
+ 
+<h2>My Experience</h2>
+<p>Worked as a sales associate.<br>Worked as a tutuor.</p>
+<br>
+
+
+<p></p>
+<div class="container">
+  <div style="text-align:center">
+    <h2 id="contact">Contact Me</h2>
+    <p>Leave me a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="contact1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <p>Liyan's Portfolio</p>
+</div>   
+
+
+</body>
+
+<style>
+    
+
+html,body {
+    
+    font-family:Georgia,"Verdana",sans-serif,Trebuchet MS}
+
+h1,h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', sans-serif,serif, sans-serif}
+    
+
+
+
+    body {
+        height: 100%;
+        margin: 0;
+  font-family: Georgia,'Trebuchet MS', sans-serif,serif, sans-serif;
+  background-color:rgba(86, 94, 167, 0.11)
+} 
+
+
+    .topNavigation{
+        overflow: hidden;
+        background-color:  rgba(86, 94, 167, 0.377);
+
+    }  
+
+
+
+     .topNavigation a{ 
+        float:left; 
+        color: #000000; 
+        text-align: center; 
+        padding: 17px 40px;
+        text-decoration: none;
+        font-size: 20px;   
+        font-family: Georgia, 'Times New Roman', Times, serif,'Times New Roman', Times, serif ;     
+    } 
+
+    .topNavigation a:hover{
+        background-color: #081fa33a;
+    color: white;    }
+
+    .topNavigation a.active {
+        background-color: #081fa362;
+  color: white;
+  
+    }
+
+
+
+
+    .hero-image{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sky.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+    
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-family: Georgia,
+}
+
+.liyan-text button{
+    border:none;
+    outline: #000000;
+    display: inline-block;
+    padding: 10px 25px;;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Georgia;
+
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .photo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 5px;
+    text-align: center;
+    background-color: #081fa33a;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: #081fa367;
+    font-family: Georgia,
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #1f33a5d0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #1f33a55e;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #1f33a5d0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #1f33a55e;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(86, 94, 167, 0.534);
+    color: black;
+    text-align: center;
+ }
+
+
+</style>
+</html>
